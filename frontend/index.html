@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IELTS Vocabulary Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="chat-container">
+    <header>
+      <h1>IELTS Vocabulary Tutor</h1>
+      <p>Your personal IELTS vocabulary coach</p>
+    </header>
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <div class="quick-actions">
+      <button data-message="Teach me one useful IELTS vocabulary word.">New word</button>
+      <button data-message="Give me a short IELTS vocabulary quiz. Test me on useful vocabulary and wait for my answer.">Quiz me</button>
+      <button data-message="Choose a useful IELTS topic and teach me 3 important vocabulary words for it.">IELTS topic</button>
+    </div>
+    <form id="chat-form">
+      <textarea id="message-input" rows="1" placeholder="Type your message..." aria-label="Message"></textarea>
+      <button id="send-button" type="submit">Send</button>
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
